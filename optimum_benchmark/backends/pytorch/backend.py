@@ -238,7 +238,7 @@ class PyTorchBackend(Backend[PyTorchConfig]):
             with torch.autocast(device_type=self.device.type, dtype=self.amp_dtype, enabled=self.config.amp_autocast):
                 return super().generate(input, kwargs)
 
-    @record_if_available
+    #@record_if_available
     def train(
         self,
         training_dataset: "Dataset",
