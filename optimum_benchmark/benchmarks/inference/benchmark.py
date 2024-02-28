@@ -20,7 +20,7 @@ if is_torch_distributed_available():
 
 LOGGER = getLogger("inference")
 
-PER_TOKEN_BACKENDS = ["pytorch", "onnxruntime", "openvino", "neural-compressor"]
+PER_TOKEN_BACKENDS = ["pytorch", "onnxruntime", "openvino", "neural-compressor", "vllm"]
 
 IMAGE_DIFFUSION_KWARGS = {"num_inference_steps": 30, "num_images_per_prompt": 1}
 TEXT_GENERATION_KWARGS = {
